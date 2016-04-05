@@ -26,6 +26,6 @@ enum ViewModelState {
 */
 class ViewModel: NSObject {
 
-    let currentState = Dynamic<ViewModelState>(.Idle)
+    
     
 }

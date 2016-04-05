@@ -1,36 +1,41 @@
 PODS:
-  - Alamofire (3.1.2)
-  - Moya (4.4.0):
-    - Moya/Core (= 4.4.0)
-  - Moya/Core (4.4.0):
-    - Alamofire (~> 3.0)
-  - Nuke (1.1.1)
-  - R.swift (0.11.0)
-  - Unbox (0.0.1)
-  - XCGLogger (3.0)
+  - Mapbox-iOS-SDK (3.2.0)
+  - NibDesignable (2.3.0)
+  - Nuke (3.0.0)
+  - R.swift (2.1.0):
+    - R.swift.Library (~> 2.0.0)
+  - R.swift.Library (2.0.0)
+  - Realm (0.98.6):
+    - Realm/Headers (= 0.98.6)
+  - Realm/Headers (0.98.6)
+  - RealmSwift (0.98.6):
+    - Realm (= 0.98.6)
+  - RxSwift (2.3.1)
+  - Unbox (1.4)
+  - XCGLogger (3.3)
 
 DEPENDENCIES:
-  - Moya
+  - Mapbox-iOS-SDK
+  - NibDesignable
   - Nuke
   - R.swift
-  - Unbox (from `https://github.com/JohnSundell/Unbox.git`)
+  - RealmSwift
+  - RxSwift
+  - Unbox
   - XCGLogger
 
-EXTERNAL SOURCES:
-  Unbox:
-    :git: https://github.com/JohnSundell/Unbox.git
-
-CHECKOUT OPTIONS:
-  Unbox:
-    :commit: dfbe41cb8a7e00bc17e02414a9ccf7df0d02c508
-    :git: https://github.com/JohnSundell/Unbox.git
-
 SPEC CHECKSUMS:
-  Alamofire: 7c16ca65f3c7e681fd925fd7f2dec7747ff96855
-  Moya: 0ade653ca4bc83bec120493130ecc32f137e5683
-  Nuke: ec41b6486f31622acedb3ca82ebf1cb7914bd472
-  R.swift: dfd7addf1564914d92745816b76b0563d688f387
-  Unbox: ff22e3cd32acb357ae82b718b28eb04f0f8c2e1a
-  XCGLogger: 5802533aff8bafc8b3b9776ab8972576f31d0a4e
+  Mapbox-iOS-SDK: 3b9e8d0f77098494cc236384fde2a26eb6683f3d
+  NibDesignable: 10eb4480cab249bb5d5ba273061b026df824087b
+  Nuke: 0bf58cc17da620fbfd9ecf67a2dd8d65ed50635e
+  R.swift: efff131531b5cf142e28fd94957806ff71ccbcf2
+  R.swift.Library: 9f4b2d12040daa1ffe336d8f7e1574f73721fd01
+  Realm: 44803f35418c5d89b27825a564247fcd190de37e
+  RealmSwift: c7239c52c83f8c43525a5269ba7be1694da33afc
+  RxSwift: 829b2843e9eddc77a02cb3f5117f0d55f8f646f1
+  Unbox: 34a7f7a978553a2b57f226251c70ada170fbb16b
+  XCGLogger: d6e196e78940ff6daab17d6917107876f973fa31
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: d3089a5030abb47ca955c5adc0ff7d5081a0965b
+
+COCOAPODS: 1.0.0.beta.6

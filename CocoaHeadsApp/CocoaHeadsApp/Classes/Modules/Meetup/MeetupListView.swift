@@ -7,26 +7,23 @@
 //
 
 import UIKit
+import NibDesignable
 
-class MeetupListView: NibDesignable {
+class MeetupListView: UIView {
 
     let viewModel = MeetupListViewModel()
-    var dataSource :MeetupListCollectionDataSource!
-    var delegate :MeetupListCollectionDelegate!
-
-    @IBOutlet weak var listCollectionView :UICollectionView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.listCollectionView.registerNib(R.nib.meetupListCollectionViewCell)
-        self.dataSource = MeetupListCollectionDataSource(viewModel: self.viewModel)
-        self.delegate = MeetupListCollectionDelegate(viewModel: self.viewModel)
-        self.listCollectionView.dataSource = self.dataSource
-        self.listCollectionView.delegate = self.delegate
-        viewModel.items.bind(self) { items in
-            self.listCollectionView.reloadData()
-        }
-        viewModel.loadMoreItens()
+    lazy var listCollectionView :UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+    }()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
 }

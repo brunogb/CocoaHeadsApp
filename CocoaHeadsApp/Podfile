@@ -1,8 +1,15 @@
 platform :ios, '8.0'
 use_frameworks!
 
+target 'CocoaHeadsApp' do
+
+pod 'RxSwift'
 pod 'R.swift'
-pod 'Unbox', :git => 'https://github.com/JohnSundell/Unbox.git'
-pod 'Moya'
+pod 'Unbox'
 pod 'XCGLogger'
 pod 'Nuke'
+pod 'RealmSwift'
+pod 'NibDesignable'
+pod 'Mapbox-iOS-SDK'
+
+end
